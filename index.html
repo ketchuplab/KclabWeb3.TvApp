@@ -29,12 +29,30 @@
 			.app-info {
 				max-width: 600px;
 				margin: 0 auto;
+				padding-bottom: 200px;
+			}
+			
+			.app-imglist {
+				overflow: auto;
+				display: flex;
+				width: 68%;
+				margin: 0 auto;
+			}
+			
+			@media screen and (max-width: 360px) {
+				.app-imglist {
+					overflow: auto;
+					display: flex;
+					width: 100%;
+					margin: 0 auto;
+				}
 			}
 			
 			.app-screenshot {
-				width: 100%;
+				width: 380px;
 				max-width: 400px;
 				margin: 20px 0;
+				padding: 10px;
 			}
 			
 			.cta-button {
@@ -51,6 +69,17 @@
 			.cta-button:hover {
 				background-color: #297fb8;
 			}
+			
+			footer {
+				background: linear-gradient(270deg, rgb(171, 102, 255) 0%, rgb(20, 241, 149) 101.39%);
+				color: #fff;
+				text-align: center;
+				padding: 20px;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
 		</style>
 	</head>
 
@@ -66,11 +95,19 @@
 			<p>
 				TV Tok - An app that lets you explore global television to your heart's content. It brings you the hottest and most exciting TV shows worldwide, allowing you to enjoy a diverse range of television content no matter where you are.
 			</p>
-			<img class="app-screenshot" src="app_screenshot.png" alt="App Screenshot">
+			<div class="app-imglist">
+				<img class="app-screenshot" src="unpackage/screenshot/1.png" alt="App Screenshot">
+				<img class="app-screenshot" src="unpackage/screenshot/2.png" alt="App Screenshot">
+				<img class="app-screenshot" src="unpackage/screenshot/3.png" alt="App Screenshot">
+				<img class="app-screenshot" src="unpackage/screenshot/4.png" alt="App Screenshot">
+				<img class="app-screenshot" src="unpackage/screenshot/5.png" alt="App Screenshot">
+			</div>
+
+		</section>
+		<footer>
 			<p>Download now and join millions of happy users!</p>
 			<a class="cta-button" href="https://ketchuplab.github.io/KclabWeb3.TvApp/tvtok.apk" target="_blank">Download Now</a>
-		</section>
-
+		</footer>
 	</body>
 
 </html>
