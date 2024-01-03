@@ -1,0 +1,7 @@
+.history
+.project
+
+unpackage
+node_modules
+
+package-lock.json
